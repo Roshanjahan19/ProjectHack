@@ -56,5 +56,5 @@ a:hover, a:focus {
 }
 
 a:focus {
-  outline: 2px solid #9B77E0;
+  outline: 2px solidrgb(141, 109, 201);
 }

@@ -75,7 +75,7 @@ const Login = () => {
               id="email"
               name="email"
               placeholder="Enter your email"
-              className="mt-2 p-3 w-full border border-gray-300 rounded-md focus:ring-2 focus:ring-purple-500"
+              className="mt-2 p-3 w-full border border-gray-300 rounded-md focus:ring-2 focus:ring-indigo-500"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
@@ -90,7 +90,7 @@ const Login = () => {
               id="password"
               name="password"
               placeholder="Enter your password"
-              className="mt-2 p-3 w-full border border-gray-300 rounded-md focus:ring-2 focus:ring-purple-500"
+              className="mt-2 p-3 w-full border border-gray-300 rounded-md focus:ring-2 focus:ring-indigo-500"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required
@@ -105,17 +105,17 @@ const Login = () => {
                 id="remember-me"
                 checked={rememberMe}
                 onChange={() => setRememberMe(!rememberMe)}
-                className="h-4 w-4 border-gray-300 rounded text-purple-600 focus:ring-2 focus:ring-purple-500"
+                className="h-4 w-4 border-gray-300 rounded text-indigo-600 focus:ring-2 focus:ring-indigo-500"
               />
               <label htmlFor="remember-me" className="ml-2 text-sm text-gray-600">Remember me</label>
             </div>
-            <a href="#" className="text-sm text-purple-600 hover:text-purple-800">Forgot password?</a>
+            <a href="#" className="text-sm text-indigo-600 hover:text-indigo-800">Forgot password?</a>
           </div>
 
           {/* Submit Button */}
           <button
             type="submit"
-            className="w-full bg-purple-600 text-white py-3 rounded-md hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500"
+            className="w-full bg-indigo-600 text-white py-3 rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500"
             disabled={loading}  // Disable button while loading
           >
             {loading ? 'Logging In...' : 'Sign in'}
@@ -125,7 +125,7 @@ const Login = () => {
           <button
             type="button"
             onClick={handleGoogleLogin}
-            className="w-full bg-red-500 text-white py-3 rounded-md hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-500 mt-4"
+            className="w-full bg-blue-500 text-white py-3 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 mt-4"
             disabled={loading}  // Disable button while loading
           >
             {loading ? 'Logging In with Google...' : 'Login with Google'}
@@ -134,14 +134,14 @@ const Login = () => {
           {/* Sign up Link */}
           <div className="text-center mt-4">
             <p className="text-sm text-gray-600">
-              Don’t have an account? <a href="/signup" className="text-purple-600 hover:text-purple-800">Sign up</a>
+              Don’t have an account? <a href="/signup" className="text-indigo-600 hover:text-indigo-800">Sign up</a>
             </p>
           </div>
         </form>
 
         {/* Footer */}
         <div className="text-center mt-6 text-sm text-gray-500">
-          By signing in, you agree to our <a href="#" className="text-purple-600 hover:text-purple-800">Terms of Service</a> and <a href="#" className="text-purple-600 hover:text-purple-800">Privacy Policy</a>.
+          By signing in, you agree to our <a href="#" className="text-indigo-600 hover:text-indigo-800">Terms of Service</a> and <a href="#" className="text-indigo-600 hover:text-indigo-800">Privacy Policy</a>.
         </div>
       </div>
     </div>
