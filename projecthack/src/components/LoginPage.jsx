@@ -75,7 +75,7 @@ const Login = () => {
               id="email"
               name="email"
               placeholder="Enter your email"
-              className="mt-2 p-3 w-full border border-gray-300 rounded-md focus:ring-2 focus:ring-indigo-500"
+              className="mt-2 p-3 w-full border border-gray-300 rounded-md focus:ring-2 focus:ring-indigo-500 text-black bg-white"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
@@ -90,7 +90,7 @@ const Login = () => {
               id="password"
               name="password"
               placeholder="Enter your password"
-              className="mt-2 p-3 w-full border border-gray-300 rounded-md focus:ring-2 focus:ring-indigo-500"
+              className="mt-2 p-3 w-full border border-gray-300 rounded-md focus:ring-2 focus:ring-indigo-500 text-black bg-white"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required
