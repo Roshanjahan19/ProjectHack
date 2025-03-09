@@ -1,0 +1,60 @@
+/* Import Tailwind base, components, and utilities */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global styles */
+body {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  height: 100vh; /* Ensure body takes up the full height of the viewport */
+  background-image: linear-gradient(to right,rgb(225, 222, 251),rgb(69, 118, 197)); /* Apply gradient */
+  background-size: cover; /* Ensure the gradient covers the whole screen */
+  background-position: center center; /* Center the gradient */
+  background-repeat: no-repeat; /* Prevent the gradient from repeating */
+}
+
+/* Homepage container styles */
+.homepage-container {
+  @apply flex items-center justify-center min-h-screen; /* Center the content */
+  width: 100%; /* Take full width of the screen */
+  height: 100%; /* Full height */
+}
+
+/* Homepage card styles */
+.homepage-card {
+  @apply w-full max-w-md bg-white rounded-xl shadow-xl p-8;
+}
+
+/* Logo styling */
+.homepage-logo {
+  @apply w-16 h-16 mx-auto rounded-full object-cover;
+}
+
+/* Header styling */
+.homepage-header {
+  @apply text-center mb-6;
+}
+
+.homepage-header h1 {
+  @apply text-3xl font-bold text-gray-800 mt-4;
+}
+
+.homepage-header p {
+  @apply text-lg text-gray-600;
+}
+
+/* Link styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover, a:focus {
+  text-decoration: underline;
+  outline: none;
+}
+
+a:focus {
+  outline: 2px solid #9B77E0;
+}
